@@ -1,0 +1,61 @@
+\hypertarget{classwebservers}{}\doxysection{webservers Class Reference}
+\label{classwebservers}\index{webservers@{webservers}}
+
+
+Webservers accepts requests and processes it.  
+
+
+
+
+Collaboration diagram for webservers\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classwebservers_ad84ef504559b58e33b2236af4239bcf6}\label{classwebservers_ad84ef504559b58e33b2236af4239bcf6}} 
+\mbox{\hyperlink{classwebservers_ad84ef504559b58e33b2236af4239bcf6}{webservers}} ()
+\begin{DoxyCompactList}\small\item\em servers empty upon initialization \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classwebservers_adc17b5df1522a9ab0a183c7d96d7b71e}{receive\+Request}} (int server\+Num, int curr\+Time, int max\+Time)
+\begin{DoxyCompactList}\small\item\em server receives request and outputs metrics \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classwebservers_a0798a4262e65744b3e92dd885cba6b1c}\label{classwebservers_a0798a4262e65744b3e92dd885cba6b1c}} 
+int \mbox{\hyperlink{classwebservers_a0798a4262e65744b3e92dd885cba6b1c}{num\+Active\+Requests}}
+\begin{DoxyCompactList}\small\item\em shows number of active requests a certain server has \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classwebservers_a3ad52c8cf558d6cc26a30e81b92cd8cc}\label{classwebservers_a3ad52c8cf558d6cc26a30e81b92cd8cc}} 
+int \mbox{\hyperlink{classwebservers_a3ad52c8cf558d6cc26a30e81b92cd8cc}{request\+Finish\+Time}}
+\begin{DoxyCompactList}\small\item\em number of clock cycles taken to finish request \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classwebservers_a84b6e0d7eda5c4d538ebb22762d425b8}\label{classwebservers_a84b6e0d7eda5c4d538ebb22762d425b8}} 
+\mbox{\hyperlink{classrequests}{requests}} \mbox{\hyperlink{classwebservers_a84b6e0d7eda5c4d538ebb22762d425b8}{current\+Request}}
+\begin{DoxyCompactList}\small\item\em tracks request currently being processed \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Webservers accepts requests and processes it. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classwebservers_adc17b5df1522a9ab0a183c7d96d7b71e}\label{classwebservers_adc17b5df1522a9ab0a183c7d96d7b71e}} 
+\index{webservers@{webservers}!receiveRequest@{receiveRequest}}
+\index{receiveRequest@{receiveRequest}!webservers@{webservers}}
+\doxysubsubsection{\texorpdfstring{receiveRequest()}{receiveRequest()}}
+{\footnotesize\ttfamily void webservers\+::receive\+Request (\begin{DoxyParamCaption}\item[{int}]{server\+Num,  }\item[{int}]{curr\+Time,  }\item[{int}]{max\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+server receives request and outputs metrics 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & of the server \\
+\hline
+{\em tracks} & the current number of clock cycles \\
+\hline
+{\em maximum} & number of clock cycles \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+webservers.\+cpp\end{DoxyCompactItemize}

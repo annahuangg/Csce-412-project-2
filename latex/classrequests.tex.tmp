@@ -1,0 +1,87 @@
+\hypertarget{classrequests}{}\doxysection{requests Class Reference}
+\label{classrequests}\index{requests@{requests}}
+
+
+a class that contains attributes for each request  
+
+
+
+
+Collaboration diagram for requests\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrequests_a281d386622b1e43d88ac50252a9f3949}\label{classrequests_a281d386622b1e43d88ac50252a9f3949}} 
+\mbox{\hyperlink{classrequests_a281d386622b1e43d88ac50252a9f3949}{requests}} ()
+\begin{DoxyCompactList}\small\item\em default constructor for requests \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrequests_a8fc774de5a415ee5b972d95f5d3beae6}{requests}} (int curr\+Time, int max\+Time)
+\begin{DoxyCompactList}\small\item\em construct request given curr\+Time and max\+Time \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classrequests_a9fde713ce97aee79989cdcd7a8370c63}{rand\+Ip\+Addr}} ()
+\item 
+int \mbox{\hyperlink{classrequests_aaf4d130ad89ba599aff517bc18905ffc}{generate\+Request\+Time}} (int min, int max)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrequests_a7dc7147b3d213c609ce4f160b4e22709}\label{classrequests_a7dc7147b3d213c609ce4f160b4e22709}} 
+std\+::string \mbox{\hyperlink{classrequests_a7dc7147b3d213c609ce4f160b4e22709}{ip\+In}}
+\begin{DoxyCompactList}\small\item\em IP Address for in. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classrequests_a42db0a72e541722e322a8260ee264489}\label{classrequests_a42db0a72e541722e322a8260ee264489}} 
+std\+::string \mbox{\hyperlink{classrequests_a42db0a72e541722e322a8260ee264489}{ip\+Out}}
+\begin{DoxyCompactList}\small\item\em IP Address for out. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classrequests_a13c40f6f733572cf5a9177822b3aed55}\label{classrequests_a13c40f6f733572cf5a9177822b3aed55}} 
+int \mbox{\hyperlink{classrequests_a13c40f6f733572cf5a9177822b3aed55}{req\+Time}}
+\begin{DoxyCompactList}\small\item\em time allotted for request \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classrequests_a2634cd185115dcffd2c15ad98ccafa40}\label{classrequests_a2634cd185115dcffd2c15ad98ccafa40}} 
+\mbox{\hyperlink{structrequestsData}{requests\+Data}} \mbox{\hyperlink{classrequests_a2634cd185115dcffd2c15ad98ccafa40}{data}}
+\begin{DoxyCompactList}\small\item\em declare request struct \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+a class that contains attributes for each request 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrequests_a8fc774de5a415ee5b972d95f5d3beae6}\label{classrequests_a8fc774de5a415ee5b972d95f5d3beae6}} 
+\index{requests@{requests}!requests@{requests}}
+\index{requests@{requests}!requests@{requests}}
+\doxysubsubsection{\texorpdfstring{requests()}{requests()}}
+{\footnotesize\ttfamily requests\+::requests (\begin{DoxyParamCaption}\item[{int}]{curr\+Time,  }\item[{int}]{max\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+construct request given curr\+Time and max\+Time 
+
+
+\begin{DoxyParams}{Parameters}
+{\em curr\+Time} & track current number of clock cycles \\
+\hline
+{\em max\+Time} & maximum number of clock cycles \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrequests_aaf4d130ad89ba599aff517bc18905ffc}\label{classrequests_aaf4d130ad89ba599aff517bc18905ffc}} 
+\index{requests@{requests}!generateRequestTime@{generateRequestTime}}
+\index{generateRequestTime@{generateRequestTime}!requests@{requests}}
+\doxysubsubsection{\texorpdfstring{generateRequestTime()}{generateRequestTime()}}
+{\footnotesize\ttfamily int requests\+::generate\+Request\+Time (\begin{DoxyParamCaption}\item[{int}]{min,  }\item[{int}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+randomy generates amount of clock cycles taken to complete request 
+\end{DoxyReturn}
+T\+H\+IS W\+AS G\+E\+N\+E\+R\+A\+T\+ED BY C\+H\+A\+T\+G\+PT\+: A method to randomly generate the time a Request takes to process. The process time time will be less than or equal to the amount of clock cycles left.\mbox{\Hypertarget{classrequests_a9fde713ce97aee79989cdcd7a8370c63}\label{classrequests_a9fde713ce97aee79989cdcd7a8370c63}} 
+\index{requests@{requests}!randIpAddr@{randIpAddr}}
+\index{randIpAddr@{randIpAddr}!requests@{requests}}
+\doxysubsubsection{\texorpdfstring{randIpAddr()}{randIpAddr()}}
+{\footnotesize\ttfamily std\+::string requests\+::rand\+Ip\+Addr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+generates random IP address 
+\end{DoxyReturn}
+T\+H\+IS W\+AS G\+E\+N\+E\+R\+A\+T\+ED BY C\+H\+A\+T\+G\+PT\+: A method to randomly generate an IP address
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+requests.\+cpp\end{DoxyCompactItemize}

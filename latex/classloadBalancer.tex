@@ -1,0 +1,39 @@
+\hypertarget{classloadBalancer}{}\doxysection{load\+Balancer Class Reference}
+\label{classloadBalancer}\index{loadBalancer@{loadBalancer}}
+
+
+Load\+Balancer manages flow of requests servers.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classloadBalancer_a07d1afcb0efcce543c54e9358c02af57}\label{classloadBalancer_a07d1afcb0efcce543c54e9358c02af57}} 
+\mbox{\hyperlink{classloadBalancer_a07d1afcb0efcce543c54e9358c02af57}{load\+Balancer}} (int \mbox{\hyperlink{classloadBalancer_aef0f6763a36ece8d1c8983e6da4c2e11}{max\+Time}})
+\begin{DoxyCompactList}\small\item\em construct \mbox{\hyperlink{classloadBalancer}{load\+Balancer}} given maximum number of clock cycles \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classloadBalancer_a76d31d7bb15e970d1920150b4c48a749}\label{classloadBalancer_a76d31d7bb15e970d1920150b4c48a749}} 
+void \mbox{\hyperlink{classloadBalancer_a76d31d7bb15e970d1920150b4c48a749}{send\+Request}} ()
+\begin{DoxyCompactList}\small\item\em sends request to the server \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classloadBalancer_ac7c6e10b3c814b3a3fd00b2dd77743b1}\label{classloadBalancer_ac7c6e10b3c814b3a3fd00b2dd77743b1}} 
+queue$<$ \mbox{\hyperlink{classrequests}{requests}} $>$ \mbox{\hyperlink{classloadBalancer_ac7c6e10b3c814b3a3fd00b2dd77743b1}{requests\+Queue}}
+\begin{DoxyCompactList}\small\item\em queue of type requests \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classloadBalancer_a8e478bbd5614020a1aedce88a1d8c676}\label{classloadBalancer_a8e478bbd5614020a1aedce88a1d8c676}} 
+int \mbox{\hyperlink{classloadBalancer_a8e478bbd5614020a1aedce88a1d8c676}{curr\+Time}}
+\begin{DoxyCompactList}\small\item\em tracks the current clock cycle to output performance \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classloadBalancer_aef0f6763a36ece8d1c8983e6da4c2e11}\label{classloadBalancer_aef0f6763a36ece8d1c8983e6da4c2e11}} 
+int \mbox{\hyperlink{classloadBalancer_aef0f6763a36ece8d1c8983e6da4c2e11}{max\+Time}}
+\begin{DoxyCompactList}\small\item\em maximum num of clock cycles entered by user \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classloadBalancer_a300b2067a099e94149b455cd1746f28b}\label{classloadBalancer_a300b2067a099e94149b455cd1746f28b}} 
+vector$<$ \mbox{\hyperlink{classwebservers}{webservers}} $>$ \mbox{\hyperlink{classloadBalancer_a300b2067a099e94149b455cd1746f28b}{server\+Vector}}
+\begin{DoxyCompactList}\small\item\em vector of webservers names \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Load\+Balancer manages flow of requests servers. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+load\+Balancer.\+cpp\end{DoxyCompactItemize}
